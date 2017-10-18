@@ -11,20 +11,28 @@ public class Syson2 {
         }
         switch (coffeeSize) {
             case January: {
-                System.out.println("Я люблю январь");
-                break;
+                Wind();
             }
             case February:
-                System.out.println("Я люблю февраль");
+                Wind();
+            case December:
+                Wind();
                 break;
-            case March: {
-                System.out.println("Я люблю март");
-                break;
-            }
-            case April: {
-                System.out.println("Я люблю апрель");
-                break;
-            }
         }
+
+        Syson[] coffeeSizes = Syson.values();
+        for (Syson January : coffeeSizes) {
+            System.out.println(January);
+        }
+        System.out.println();
+
+        Syson jhk = Syson.valueOf("January");
+        System.out.println("Переменная Syson содержит " +
+                jhk);
+    }
+
+    private static void Wind() {
+        System.out.println("Я люблю зиму");
+        return;
     }
 }
