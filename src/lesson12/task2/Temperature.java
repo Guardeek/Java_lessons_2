@@ -5,7 +5,7 @@ public enum Temperature {
     WINTER(1),
     SUMMER(2) {
         public String getDescription() {
-            return "SUMMER";
+            return "Теплое время года";
 
         }
     },
@@ -15,7 +15,7 @@ public enum Temperature {
     private int delta;
 
     public String getDescription() {
-        return "WINTER";
+        return "Холодное время года";
 
     }
 
