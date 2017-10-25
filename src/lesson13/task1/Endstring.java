@@ -10,6 +10,7 @@ public class Endstring {
         System.out.println(str1.replace('a', 'o'));
         System.out.println(str1.toUpperCase());
         System.out.println(str1.toLowerCase());
+        System.out.println(str1.substring(7,11));
     }
 
     public static void main(String[] args) {
