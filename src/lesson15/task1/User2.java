@@ -5,19 +5,14 @@ public class User2 {
     private static String password = "111111";
 
     public static class Query {
-      //  class Query {
-            public void printToLogg() {
-
-                System.out.println("login is " + login);
-                System.out.println("password is " + password);
-            }
+        public void printToLogg() {
+            System.out.println("login is " + login);
+            System.out.println("password is " + password);
         }
+    }
 
-        Query query = new Query();
-   //     query.printToLogg();
-
+    Query query = new Query();
 
     public static void main(String[] args) {
-
     }
 }
