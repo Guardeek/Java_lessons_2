@@ -3,7 +3,7 @@ package lesson12.task2;
 public enum Temperature {
 
     WINTER(1),
-    SUMMER(2) {
+    SUMMER(2) { //переопределение
         public String getDescription() {
             return "Теплое время года";
 
