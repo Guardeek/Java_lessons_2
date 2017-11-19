@@ -14,16 +14,15 @@ public class Authenticate {
                 throw new WrongLoginException("Login more than 20.");
             }
             if (password.length() > 20 || !password.equals(confpassword)) {
-                throw new WrongPasswordException("Password more than 20.");
+                throw new WrongPasswordException("Password is not correct.");
             }
-        } catch (WrongPasswordException e) {
-            System.out.println(e.getMessage());
-            return false;
-        } catch (WrongLoginException e) {
+        } catch (WrongPasswordException | WrongLoginException e) {
             System.out.println(e.getMessage());
             return false;
         } finally {
-            System.out.println();
+            System.out.println("Login: " + login);
+            System.out.println("Password: " + password);
+            System.out.println("ConfPassword: " + confpassword);
         }
         return true;
     }
